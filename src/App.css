@@ -24,21 +24,27 @@
 }
 
 .App .advice-number {
-  padding-top: 20px;
+  padding-top: 40px;
   margin: 0;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #61f7b3;
+  font-weight: 800;
 }
 
 .App .advice-container {
   position: relative;
   max-width: 444px;
   padding: 40px;
+  padding-top: 25px;
   margin: 0;
   /* border: 1px solid white; */
 }
 
 .App .pattern-divider {
-  padding-bottom: 50px;
+  padding-bottom: 65px;
 }
 
 /* .App .icon-dice { */
