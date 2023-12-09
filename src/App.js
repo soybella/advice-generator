@@ -3,7 +3,11 @@ import patternDivider from "./images/pattern-divider-desktop.svg";
 import "./App.css";
 
 function App() {
-  console.log(patternDivider);
+  // Make the icon dice a button to randomize advice
+  function handleClick() {
+    console.log("test button");
+  }
+
   return (
     <div className="App">
       <div className="App-header">
@@ -20,10 +24,10 @@ function App() {
               className="pattern-divider"
             />
           </div>
-          <div className="icon-dice-container">
-            <div className="icon-sphere">
+          <div className="icon-dice-container" onClick={handleClick}>
+            <button className="icon-sphere">
               <img src={iconDice} alt="SVG icon dice" className="icon-dice" />
-            </div>
+            </button>
           </div>
         </section>
       </div>
