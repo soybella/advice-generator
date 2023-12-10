@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import iconDice from "./images/icon-dice.svg";
-import patternDivider from "./images/pattern-divider-desktop.svg";
+import patternDividerDesktop from "./images/pattern-divider-desktop.svg";
+// import patternDividerMobile from "./images/pattern-divider-mobile.svg";
 import "./App.css";
 import axios from "axios";
 
@@ -8,6 +9,10 @@ function App() {
   let [results, setResults] = useState();
   let [adviceId, setAdviceId] = useState();
   let [isLoaded, setIsLoaded] = useState(false);
+  // let [imageSource, setImageSource] = useState(patternDividerDesktop);
+  let [windowHeight, setWindowHeight] = useState();
+
+  console.log(windowHeight);
 
   function handleClick(event) {
     event.preventDefault();
@@ -24,20 +29,26 @@ function App() {
     setIsLoaded(true);
     setResults("Roll the dice below");
     setAdviceId("Advice Generator");
+    // setWindowHeight(window.innerHeight + "px");
   }
+
+  // function handleWindowHeight() {
+
+  // }
 
   if (isLoaded) {
     return (
-      <div className="App">
+      <div className="App" src={windowHeight}>
         <div className="App-header">
           <section className="container">
             <p className="container advice-number"> {adviceId} </p>
             <h4 className="container advice-container">{results}</h4>
             <div>
               <img
-                src={patternDivider}
+                src={patternDividerDesktop}
                 alt="SVG pattern divider"
                 className="pattern-divider"
+                // onChange={handleChangeImage}
               />
             </div>
             <div className="icon-dice-container" onClick={handleClick}>

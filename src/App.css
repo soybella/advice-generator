@@ -1,17 +1,23 @@
 .App {
   text-align: center;
   font-family: "Manrope", sans-serif;
+  width: 100%;
+  height: 100vh;
+  /* height: 100%; */
 }
 
 .App-header {
   background: #1f2632;
-  min-height: 100vh;
+  /* background-size: cover; */
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 28px;
   color: white;
+  margin: 0;
 }
 
 .App .container {
@@ -33,7 +39,7 @@
 
 .App .advice-container {
   position: relative;
-  max-width: 444px;
+  width: 444px;
   padding: 40px;
   padding-top: 25px;
   margin: 0;
@@ -63,12 +69,10 @@
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  /* transition: 675ms ease-in-out; */
 }
 
 .App .icon-dice:hover {
   cursor: pointer;
-  /* transform: rotate(360deg); */
   animation: bounce 2.5s ease-in-out;
 }
 
@@ -87,5 +91,17 @@
 
   60% {
     transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 376px) {
+  .App .pattern-divider {
+    content: url(./images/pattern-divider-mobile.svg);
+  }
+
+  .App .advice-container {
+    width: 295px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
