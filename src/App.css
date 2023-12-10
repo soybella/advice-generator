@@ -63,10 +63,29 @@
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  transition: 450ms ease-in-out;
+  /* transition: 675ms ease-in-out; */
 }
 
 .App .icon-dice:hover {
-  transform: rotate(360deg);
   cursor: pointer;
+  /* transform: rotate(360deg); */
+  animation: bounce 2.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px) rotate(360deg);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
 }
