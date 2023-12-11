@@ -104,6 +104,10 @@
   .App .advice-container {
     width: 295px;
   }
+
+  .App .icon-dice {
+    animation: bounce 2.5s infinite;
+  }
 }
 
 @media (max-width: 395px) {
