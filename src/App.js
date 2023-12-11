@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import iconDice from "./images/icon-dice.svg";
 import patternDividerDesktop from "./images/pattern-divider-desktop.svg";
-import "./App.css";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   let [results, setResults] = useState();
