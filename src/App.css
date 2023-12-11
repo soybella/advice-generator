@@ -3,12 +3,10 @@
   font-family: "Manrope", sans-serif;
   width: 100%;
   height: 100vh;
-  /* height: 100%; */
 }
 
 .App-header {
   background: #1f2632;
-  /* background-size: cover; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -85,23 +83,31 @@
     transform: translateY(0);
   }
 
+  20% {
+    transform: translateY(5px);
+  }
+
   40% {
-    transform: translateY(-10px) rotate(360deg);
+    transform: translateY(-8px) rotate(180deg);
   }
 
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 565px) {
   .App .pattern-divider {
     content: url(./images/pattern-divider-mobile.svg);
   }
 
   .App .advice-container {
     width: 295px;
-    margin-left: 10px;
-    margin-right: 10px;
+  }
+}
+
+@media (max-width: 395px) {
+  .App .advice-container {
+    width: 255px;
   }
 }
