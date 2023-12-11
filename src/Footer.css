@@ -1,0 +1,13 @@
+.Footer p {
+  font-size: 11px;
+}
+
+.Footer {
+  margin-top: 65px;
+}
+
+.Footer a,
+.Footer a:visited {
+  color: #61f7b3;
+  text-decoration: none;
+}

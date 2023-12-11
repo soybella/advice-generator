@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import iconDice from "./images/icon-dice.svg";
 import patternDividerDesktop from "./images/pattern-divider-desktop.svg";
 import axios from "axios";
+import Footer from "./Footer.js";
 import "./App.css";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
               </button>
             </div>
           </section>
+          <Footer />
         </div>
       </div>
     );
